@@ -9,7 +9,7 @@
   </p>
 </div>
 
-## About
+# **About**
 
 Adding an expiration period in the form of a count and you can also update the duration in your model and here it will automatically synchronize the new period
 And when this period expires, the event will be issued, this package currently supports these database systems.
@@ -22,18 +22,18 @@ use [Example Test](#example) to see How does this package work
 
 - Easy to use
 
-### Alert
+# **Alert**
 
-property "_id" must be included in the data because we use it as the container key
+property "\_id" must be included in the data because we use it as the container key
 
-## Installation
+# **Installation**
 
 ```sh-session
 npm install iexpire
 yarn add iexpire
 ```
 
-## How to use
+# **How to use**
 
 ```js
 const { MongoDbExpirer } = require("iexpire");
@@ -42,7 +42,7 @@ const iexpire = new MongoDbExpirer(<Modal>, {
 });
 ```
 
-## Options
+# **Options**
 
 ```js
 {
@@ -54,9 +54,9 @@ const iexpire = new MongoDbExpirer(<Modal>, {
 }
 ```
 
-## Example
+# **Example**
 
-> **Example Test**
+### **Example Test**
 
 ```js
 const mongoose = require("mongoose");
@@ -66,7 +66,7 @@ mongoose.connect("<UrI>").then(async () => {
   const mongoose = require("mongoose");
   //Modal is the model that you want to create an expiration period
   const Schema = new mongoose.Schema({
-    expiresAt: Number,//milliseconds
+    expiresAt: Number, //milliseconds
   });
   const Modal = mongoose.model("subscriptions", Schema); //Your model
   const iexpire = new MongoDbExpirer(Modal, {
@@ -101,7 +101,7 @@ mongoose.connect("<UrI>").then(async () => {
 });
 ```
 
-> **Example Seriously**
+### **Example Seriously**
 
 ```js
 const mongoose = require("mongoose");

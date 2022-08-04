@@ -3,8 +3,10 @@ const interval = require("set-interval");
 const events = require("events");
 const EventEmitter = new events();
 EventEmitter.setMaxListeners(0);
+const { Model } = require("mongoose");
 /**
  *
+ * @param {Model} connection
  * @param {*} options
  * @returns {MongoDbExpirer, EventEmitter}
  * @constructor
