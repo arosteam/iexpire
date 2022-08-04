@@ -1,6 +1,6 @@
 <div align="center">
   <p>
- <a href="https://www.npmjs.com/package/iexpire"><img  src="https://raw.githubusercontent.com/4i8/iexpire/master/logo/iexpire.png" width="400" alt="iexpire" /></a>
+ <a href="https://www.npmjs.com/package/iexpire"><img  src="https://github.com/4i8/iexpire/blob/master/logo/iexpire.png" width="400" alt="iexpire" /></a>
   </p>
   <p>
  <a href="https://github.com/arosteam"><img src="https://img.shields.io/static/v1?label=powered%20by&message=Aros&color=000636&style=for-the-badge&logo=Windows%20Terminal&logoColor=fff"/></a>
