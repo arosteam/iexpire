@@ -22,6 +22,10 @@ use [Example Test](#example) to see How does this package work
 
 - Easy to use
 
+### Alert
+
+property "_id" must be included in the data because we use it as the container key
+
 ## Installation
 
 ```sh-session
