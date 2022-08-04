@@ -66,7 +66,7 @@ mongoose.connect("<UrI>").then(async () => {
   const mongoose = require("mongoose");
   //Modal is the model that you want to create an expiration period
   const Schema = new mongoose.Schema({
-    expiresAt: Number,
+    expiresAt: Number,//milliseconds
   });
   const Modal = mongoose.model("subscriptions", Schema); //Your model
   const iexpire = new MongoDbExpirer(Modal, {
@@ -111,7 +111,7 @@ mongoose.connect("<UrI>").then(async () => {
   const mongoose = require("mongoose");
   //Modal is the model that you want to create an expiration period
   const Schema = new mongoose.Schema({
-    expiresAt: Number,
+    expiresAt: Number,//milliseconds
   });
   const Modal = mongoose.model("subscriptions", Schema); //Your model
   const iexpire = new MongoDbExpirer(Modal, {
