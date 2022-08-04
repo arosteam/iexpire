@@ -1,0 +1,34 @@
+{
+  "name": "iexpire",
+  "version": "1.0.1",
+  "description": "Adding an expiration period in the form of a count and you can also update the duration in your model and here it will automatically synchronize the new period And when this period expires, the event will be issued, this package currently supports these database systems. MongoDB How this package works: You will create a connection to the model with data that you want to create for an expiration period, and note that the package only supports milliseconds Then it will create a dummy container within the process that has a duration for each object, and it will subtract the period that you put within the option every time the session of the intervel period that you put into the option ends. I do not know my explanation is understandable or not, but this package you run only once on the model you want to create an expiration period and you do not need to create a new one every time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "expiry",
+    "expire",
+    "iexpire",
+    "mongodb",
+    "mysql",
+    "database",
+    "time",
+    "out",
+    "expired"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/4i8/iexpire.git"
+  },
+  "bugs": {
+    "url": "https://github.com/4i8/iexpire/issues"
+  },
+  "homepage": "https://github.com/4i8/iexpire#readme",
+  "license": "Apache-2.0",
+  "author": "Arth",
+  "dependencies": {
+    "ms": "^2.1.3",
+    "set-interval": "^2.1.3"
+  }
+}

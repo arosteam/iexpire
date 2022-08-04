@@ -40,14 +40,18 @@ const iexpire = new MongoDbExpirer(<Modal>, {
 > **Options**
 
 ```js
+{
   subtract: "",// He will subtract this period and then update it each time
   interval: "",//Here the Interval, when the period ends, it will subtract the number
   property: "",// property for expiration that will be updated
   delete: false,// If true, it will delete the document when the period ends
   sync: "2s",//Here it checks if there is new data with a new id, and if it finds new data, it will create a new container for it with a different expiration period
+}
 ```
 
-> **Exp**
+## Example
+
+> **Example Test**
 
 ```js
 const mongoose = require("mongoose");
@@ -92,6 +96,45 @@ mongoose.connect("<UrI>").then(async () => {
 });
 ```
 
+> **Example Seriously**
+
+```js
+const mongoose = require("mongoose");
+const ms = require("ms");
+mongoose.connect("<UrI>").then(async () => {
+  const { MongoDbExpirer } = require("iexpire");
+  const mongoose = require("mongoose");
+  //Modal is the model that you want to create an expiration period
+  const Schema = new mongoose.Schema({
+    expiresAt: Number,
+  });
+  const Modal = mongoose.model("iexpires", Schema);
+  const iexpire = new MongoDbExpirer(Modal, {
+    subtract: "1d",
+    interval: "1d",
+    property: "expiresAt",
+    delete: true, // If true, it will delete the document when the period ends
+    sync: "2s",
+  });
+  //This event if you get an error
+  iexpire.on("error", (data) => {
+    console.log(data);
+  });
+  //The data from which it was subtracted
+  iexpire.on("subtract", (data) => {
+    console.log(data);
+  });
+  //Here is the data that was deleted
+  iexpire.on("delete", (data) => {
+    console.log(data);
+  });
+  //And here it is when it expires
+  iexpire.on("end", (data) => {
+    console.log(data);
+  });
+  console.log("Connect To MongoDB Successfully");
+```
+
 ## Links
 
 - [Twiter](https://twitter.com/onlyarth)
@@ -100,10 +143,3 @@ mongoose.connect("<UrI>").then(async () => {
 ## License
 
 - [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)
-
-# iexpire
-
-```
-
-```
-# iexpire
