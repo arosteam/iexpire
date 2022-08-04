@@ -18,7 +18,7 @@ How this package works: You will create a connection to the model with data that
 Then it will create a dummy container within the process that has a duration for each object, and it will subtract the period that you put within the option every time the session of the intervel period that you put into the option ends.
 
 I do not know my explanation is understandable or not, but this package you run only once on the model you want to create an expiration period and you do not need to create a new one every time
-
+use [Example Test](#Options) to see How does this package work
 - Easy to use
 
 ## Installation
@@ -37,7 +37,7 @@ const iexpire = new MongoDbExpirer(<Modal>, {
 });
 ```
 
-> **Options**
+## Options
 
 ```js
 {
