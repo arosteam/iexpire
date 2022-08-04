@@ -15,10 +15,11 @@ Adding an expiration period in the form of a count and you can also update the d
 And when this period expires, the event will be issued, this package currently supports these database systems.
 MongoDB
 How this package works: You will create a connection to the model with data that you want to create for an expiration period, and note that the package only supports milliseconds
-Then it will create a dummy container within the process that has a duration for each object, and it will subtract the period that you put within the option every time the session of the intervel period that you put into the option ends.
+Then it will create a dummy container within the process that has a duration for each object, and it will subtract the period that you put within the [option](#options) every time the session of the intervel period that you put into the [option](#options) ends.
 
 I do not know my explanation is understandable or not, but this package you run only once on the model you want to create an expiration period and you do not need to create a new one every time
-use [Example Test](#Options) to see How does this package work
+use [Example Test](#example) to see How does this package work
+
 - Easy to use
 
 ## Installation
