@@ -64,7 +64,7 @@ mongoose.connect("<UrI>").then(async () => {
   const Schema = new mongoose.Schema({
     expiresAt: Number,
   });
-  const Modal = mongoose.model("iexpires", Schema);
+  const Modal = mongoose.model("subscriptions", Schema); //Your model
   const iexpire = new MongoDbExpirer(Modal, {
     subtract: "1d",
     interval: "1s", //This is just an example. If the expiration period is in days, it is preferable to put it "1d" instead of "1s"
@@ -109,7 +109,7 @@ mongoose.connect("<UrI>").then(async () => {
   const Schema = new mongoose.Schema({
     expiresAt: Number,
   });
-  const Modal = mongoose.model("iexpires", Schema);
+  const Modal = mongoose.model("subscriptions", Schema); //Your model
   const iexpire = new MongoDbExpirer(Modal, {
     subtract: "1d",
     interval: "1d",
