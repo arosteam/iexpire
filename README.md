@@ -138,6 +138,7 @@ mongoose.connect("<UrI>").then(async () => {
     console.log(data);
   });
   console.log("Connect To MongoDB Successfully");
+  });
 ```
 
 ## Links
