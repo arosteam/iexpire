@@ -7,6 +7,12 @@
  <a href="https://www.npmjs.com/package/iexpire"><img src="https://img.shields.io/npm/v/iexpire.svg?style=for-the-badge" alt="NPM version" /></a>
  <a href="https://www.npmjs.com/package/iexpire"><img src="https://img.shields.io/npm/dt/iexpire.svg?maxAge=3600&style=for-the-badge" alt="NPM downloads" /></a>
   </p>
+  
+    <p>
+ <a href="https://github.com/arosteam"><img src="https://img.shields.io/static/v1?label=powered%20by&message=Aros&color=000636&style=for-the-badge&logo=Windows%20Terminal&logoColor=fff"/></a>
+ <a href="https://www.npmjs.com/package/iexpire"><img src="https://img.shields.io/npm/v/iexpire.svg?style=for-the-badge" alt="NPM version" /></a>
+ <a href="https://www.npmjs.com/package/iexpire"><img src="https://img.shields.io/npm/dt/iexpire.svg?maxAge=3600&style=for-the-badge" alt="NPM downloads" /></a>
+  </p>
 </div>
 
 # **About**
